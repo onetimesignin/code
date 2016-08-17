@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Onetime Signin - Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        //$(document).ready(function () {
+        //    $("#btn-search").click(function () {
+
+
+        //        var cx = '004686718486962333129:yluncfgyt-i';
+
+        //        $.ajax({
+        //            type: "GET",
+        //            url:'https://cse.google.com/cse.js?cx=' + cx,
+        //            dataType: "json",
+        //            success: function (data) {
+        //                alert(data);
+        //            },
+        //            error: function (thrownError) {
+        //                alert(data);
+        //            }
+        //        });
+        //    });
+        //});
+
+        (function () {
+            var cx = '004686718486962333129:yluncfgyt-i';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="text-align:center;color:#007EE5">Onetime Signin</h1>
+        <a href="index.html" style="text-align:right">Help?</a>&nbsp&nbsp|&nbsp&nbsp
+        <a href="index.html" style="text-align:right">Sign out</a>
+        <hr style="color:#DCDFE3;" />
+    </div>
+    <div style="margin-left:20%;margin-top:1%;margin-right:10%;">
+        <h2>Dashboard</h2>
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="panel panel-default">
+                    <div class="panel-heading">List Of Accounts</div>
+                    <div class="panel-body"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Add Account</div>
+                    <div class="panel-body">
+                        <gcse:search></gcse:search>
+
+                        <!--<input type="text" class="form-control" name="accountname" id="txtAccountName" placeholder="Enter Account Name">-->
+                        <!--<br /><button id="btn-search" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Search</button>
+                        <div id="searchData"></div>-->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
